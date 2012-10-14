@@ -96,16 +96,11 @@ def main():
   """
   Scrap all tricks and save them locally.
   """
-  
-#  categoryNameList = re.findall(r'href="(.+)" language', RAW_PAGE_SEGMENT)
-#  for trickCategoryPageName in categoryNameList:
-#    trickCategoryLink = makeHttpLink(trickCategoryPageName)
-#    scrapTrickList(trickCategoryLink)    
-#    print '#########################################################'
-
-  scrapTrickList('http://math-magic.com/trig.htm')
-  
-#  scrapGuidePage(link)
+  categoryNameList = re.findall(r'href="(.+)" language', RAW_PAGE_SEGMENT)
+  for trickCategoryPageName in categoryNameList:
+    trickCategoryLink = makeHttpLink(trickCategoryPageName)
+    scrapTrickList(trickCategoryLink)    
+    print '#########################################################'
 
 
 def scrapTrickList(pageLink):
