@@ -1,0 +1,128 @@
+<h4 align="left"><!--mstheme--><font color="#003366">Determining How Many Words/Numbers Out Of A Given Set:<!--mstheme--></font></h4>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">A.&nbsp; Many
+questions will give you a set of numbers or letters and ask how many numbers or
+how many words can be made from a set.</p>
+
+<p align="left" style="text-indent: -.25in; margin-left: .75in">Ex [1]&nbsp; How
+many 6 letter words, real or imaginary, can be made from [N, U, M, B, E, R]?</p>
+
+<p align="left" style="text-indent: -.25in; margin-left: .75in">Ex [2]&nbsp; How
+many 4 digit numbers can be made out of [1, 2, 3, 4]?</p>
+
+<p align="left" style="text-indent: -.25in; margin-left: .25in">B.&nbsp; Dealing
+with letters:</p>
+
+<p align="left" style="text-indent: -.25in; margin-left: .75in">1.&nbsp; If all
+the letters are distinct then the answer is n! where n is the number of letters.</p>
+
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [1]&nbsp; How
+many 6 letter words, real of imaginary, can be made from [N, U, M, B, E, R]?</p>
+
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">Since all the letters are distinct,
+    we know the answer is 6! = 720.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">The reason is because for the first
+    letter we have 6 choices.&nbsp; The second letter we only have 5
+    choices.&nbsp; The third letter we only have 4 choices and so on.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">So the answer is 6 x 5 x 4 x 3 x 2
+    x 1.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">2.&nbsp; If all
+the letters are not distinct, then the answer changes.&nbsp; The answer becomes
+n!/a!, where a is the number of each indistinct letter.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [2]&nbsp; How
+many 5 letter words, real or imaginary, can be made from [S, C, O, <font color="#FF0000">T</font>,
+<font color="#0000FF">T</font>]?</p>
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">The answer is <sup>5!</sup>/<sub>2!</sub>
+    = <sup>120</sup>/<sub>2</sub> = 60.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">The reason is because we have 2
+    T's.&nbsp; This limits are possibilities because we can have the word - S<font color="#0000FF">T</font><font color="#FF0000">T</font>OC
+    and S<font color="#FF0000">T</font><font color="#0000FF">T</font>OC and they
+    are the same word.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">If we were given
+the letters [S, S, O, T, T] then the answer would become <sup>5!</sup>/<sub>2!*2!</sub>,
+because we have 2 S's and 2 T's.&nbsp; If we were given [S, S, S, O, T] the
+answer would be <sup>5!</sup>/<sub>3!</sub>, because we have 3 S's.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">C.&nbsp; Dealing
+with numbers:</p>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">1.&nbsp; If all
+the numbers are distinct, AND one of them is not a 0, then the answer is n!
+where n is the number of digits given.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [1]&nbsp; How
+many 4 digit numbers can be made using [1, 2, 3, 4]?</p>
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">The answer is 4! = 24.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">The reason is because we have 4
+    choices for the first digit, 3 for the second, and so on.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">This means there are 4 x 3 x 2 x 1
+    possibilities.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">2.&nbsp; If all
+the numbers are not distinct, AND one of them is not a 0, then the answer is <sup>n!</sup>/<sub>a!</sub>,
+where a is the number of each distinct digit.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [2]&nbsp; How
+many 5 digit numbers can be made using [<font color="#FF0000">9</font>, 3, 5, 7,
+<font color="#0000FF">9</font>]?</p>
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">Because we have 2 9's the answer is
+    <sup>5!</sup>/<sub>2!</sub> or 60.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">The reason why is because the
+    number <font color="#0000FF">9</font><font color="#FF0000">9</font>753 and <font color="#FF0000">9</font><font color="#0000FF">9</font>753
+    are the same number.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Like above, when
+dealing with letters, if we had the digits [9, 3, 3, 7, 9] the answer would be <sup>5!</sup>/<sub>2!*2!</sub>
+and if we had [9,9,3,7,9] the answer would be <sup>5!</sup>/<sub>3!</sub>.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">3.&nbsp; If all
+the numbers are distinct but one of the numbers is a 0, then the answer becomes:
+(n-1)*(n-1)!, where n is the number of digits.&nbsp; Instead of memorizing a
+formula, think through it logically.&nbsp; See below.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [3]&nbsp; How
+many 4 digit numbers can be made using [3, 2, 1, 0]?</p>
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">First, ask yourself how many
+    possibilities are there for the 1<sup>st</sup> digit.&nbsp; There are only
+    3, not 4, since 0 cannot start a number.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">The number of possibilities for the
+    2<sup>nd</sup> digit is also 3, since one number was taken out to be placed
+    in the 1<sup>st</sup> digit.&nbsp; Then there are 2 possibilities for the 3<sup>rd
+    </sup>and only 1 possibility for the last.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">This means the probability is: 3 x
+    3 x 2 x 1 = 18.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">4.&nbsp; If the
+numbers are not all distinct and you have at least 1 zero, then the answer is
+changed a little.&nbsp; You should follow step (3) above and work the problem as
+if they were all distinct.&nbsp; Then, in the end, divide by n! where 'n' is the
+number of repeated digits.&nbsp; See below.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">Ex [4]&nbsp; How
+many 6 digit numbers can be made using [1, 2, 2, 2, 4, 0]?</p>
+<ol type="a">
+  <li>
+    <p align="left" style="margin-left: 1in">If we treated all of these as
+    distinct numbers then we would have an answer of 5 x 5 x 4 x 3 x 2 x 1 or
+    600.&nbsp; See step 3.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">Since we have the digit 2 repeated
+    3 times, we need to divide by 3! or 6.</li>
+  <li>
+    <p align="left" style="margin-left: 1in">So the answer is <sup>600</sup>/<sub>6</sub>
+    = 100.</li>
+</ol>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">&nbsp;</p>
+<p align="center">
