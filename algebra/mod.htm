@@ -1,0 +1,58 @@
+<h4 align="left"><!--mstheme--><font color="#003366">Modular Math:<!--mstheme--></font></h4>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">A.&nbsp; Modular
+math is simply working with MOD.&nbsp; MOD is the remainder after dividing by a
+specific value.&nbsp; For example, 35 MOD 3 = 2 since the remainder after 35 is
+divided by 3 is 2.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">B.&nbsp; Modular
+math works with congruencies.&nbsp;&nbsp; It is true that 35 MOD 3 = 2, but it
+is also true that this is congruent to 32 MOD 3 or even 26 MOD 3, since they all
+produce the same value of 2 after being divided by 3.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">C.&nbsp; In
+general, n MOD a <img border="0" src="images/mod.ht5.gif" width="13" height="13"> (n + ab) MOD a, where
+b is any integral.&nbsp; So 35 MOD 3 <img border="0" src="images/mod.ht6.gif" width="13" height="13">
+(35 + 3b) MOD 3.&nbsp; If b = -4, then we learn that 35 MOD 3 <img border="0" src="images/mod.ht7.gif" width="13" height="13">
+23 MOD 3, which we can see is true since they both produce the value 2.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">D.&nbsp; Number
+sense uses this in a few different forms.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">Ex [1]&nbsp; 2x <img border="0" src="images/mod.ht8.gif" width="13" height="13">
+3 MOD 7, 0&lt;x&lt;12, then x = _____</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">a.&nbsp; On
+problems like these, think of this as being 2x <img border="0" src="images/mod.ht9.gif" width="13" height="13">
+3a + 7.&nbsp; We are looking for a value of a that produces an integer value for
+x that is between 0 and 12.&nbsp; Basically, we are adding multiples of 7 to 3
+until a value can be found for x in the given range.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">b.&nbsp; Go
+through each value mentally (usually starting with 0) until you find a value
+that works.&nbsp; With a = 0, we get x = <sup>3</sup>/<sub>2</sub> which is not
+an integer.&nbsp; With a = 1, we get x = 5 which is in the range.&nbsp; So x =
+5.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">Ex [2]&nbsp; 13<sup>14</sup>
+divided by 5 has a remainder of _____</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">a.&nbsp; One
+property of MOD's is that a<sup>b</sup> MOD n <img border="0" src="images/mod.ht10.gif" width="13" height="13">
+(a MOD n)<sup>b</sup> MOD n.&nbsp; So for this problem, we know that 13 MOD 5 =
+3.&nbsp; So we can first think of this as being 3<sup>14</sup> MOD 5.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">b.&nbsp; There are
+several ways to go from here.&nbsp; I would probably then say this is equal to 9<sup>7</sup>
+MOD 5.&nbsp; We know that 9<sup>0</sup> ends in a 1 and 9<sup>1</sup> ends in a
+9.&nbsp; After this the last digit repeats itself.&nbsp; So 9<sup>n</sup> <img border="0" src="images/mod.ht11.gif" width="13" height="13">
+9<sup>n MOD 2</sup>.&nbsp; So 9<sup>7</sup> <img border="0" src="images/mod.ht12.gif" width="13" height="13">
+9<sup>1</sup> which has a remainder of 4 after dividing by 5.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">c.&nbsp; The
+answer is 4.&nbsp; </p>
+<p align="left" style="text-indent: -.25in; margin-left: 1in">d.&nbsp; The goal
+of these types of problems is to reduce the value using congruencies, until you
+get something that is easy to compute.&nbsp; In this case, we got 9 MOD 5.&nbsp;
+Sometimes, you can know the answer earlier.&nbsp; It just takes a lot of
+practice.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .25in">E.&nbsp;
+Sometimes, there are special cases where finding the answer is easier.</p>
+<p align="left" style="text-indent: -.25in; margin-left: .75in">1.&nbsp; We know
+from a theorem (Euler's Totient Theorem) that a<sup>b</sup> MOD b = a, if a and
+b are <i><a href="../misc/rel_prime.htm">relatively prime</a></i>.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1.25in">Ex [1]&nbsp; 15<sup>17</sup>
+MOD 17 = ________</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1.5in">a.&nbsp; The
+answer is 15 since 15 and 17 are relatively prime.</p>
+<p align="left" style="text-indent: -.25in; margin-left: 1.5in">&nbsp;</p>
+<p align="center">
